@@ -1,13 +1,14 @@
 <div class="wrapper"style="color:black;">
     <h1>Switch Board </h1>
+
     <div class="switches" 
       *ngFor="let switch of switches;let toggle = index">
       <button *ngIf="switch"[ngClass]="{'on': switch}"(click)="change(toggle)">ON</button>
       <button *ngIf="!switch"[ngClass]="{'on': switch}"(click)="change(toggle)">OFF</button>
     </div>
-</div>  
-      
-      
+    
+</div>
+
 
 
   

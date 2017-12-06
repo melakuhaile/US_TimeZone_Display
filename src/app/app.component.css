@@ -6,12 +6,12 @@ div.wrapper {
 
 div.switches {
     display: inline-block;
-    /* align-content: center; */
 }
 button {
     width: 80px;
     height: 80px;
     background-color: red;
+
 }
 button.on {
     background-color: green;
