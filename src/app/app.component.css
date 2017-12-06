@@ -1,17 +1,17 @@
 div{
-    height: 100px;
+    height: 150px;
     text-align: center;
     /* width: 400px;
     margin-left: 800px; */
 
 }
 section {
-    height: 100px;
+    height: 150px;
     text-align: center;
 }
 button {
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 100px;
     margin-left: 75px;
     font-size: 1.5em;
     font-weight: bold;

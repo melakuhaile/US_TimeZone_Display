@@ -10,9 +10,9 @@ export class AppComponent {
   TimeZoneSelected = null;
 
   getDate(timezone) {
-    this.time = new Date();
+    this.time = new Date(); // creates current location date and time, eastern time.
     if (timezone === 'MST') {
-      this.time.setHours(this.time.getHours() + 1);
+      this.time.setHours(this.time.getHours() + 1); // adds an hour on current time
     } else if (timezone === 'CST') {
       this.time.setHours(this.time.getHours() + 2);
     } else if (timezone === 'EST') {
