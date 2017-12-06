@@ -1,21 +1,18 @@
-div{
-    height: 150px;
+div.wrapper {
+    width: 1350px;
+    height: 100px;
     text-align: center;
-    /* width: 400px;
-    margin-left: 800px; */
-
 }
-section {
-    height: 150px;
-    text-align: center;
+
+div.switches {
+    display: inline-block;
+    /* align-content: center; */
 }
 button {
-    width: 150px;
-    height: 100px;
-    margin-left: 75px;
-    font-size: 1.5em;
-    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    background-color: red;
 }
-.selected {
-    background-color: yellow;
+button.on {
+    background-color: green;
 }

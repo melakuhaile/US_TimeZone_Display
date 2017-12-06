@@ -6,19 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  time = new Date();
-  TimeZoneSelected = null;
-
-  getDate(timezone) {
-    this.time = new Date(); // creates current location date and time, eastern time.
-    if (timezone === 'MST') {
-      this.time.setHours(this.time.getHours() + 1); // adds an hour on current time
-    } else if (timezone === 'CST') {
-      this.time.setHours(this.time.getHours() + 2);
-    } else if (timezone === 'EST') {
-      this.time.setHours(this.time.getHours() + 3);
-    }
-    this.TimeZoneSelected = timezone;
+  switches = [true, false, true, false, false, true, true, true, false, true];
+  change(toggle) {
+    this.switches[toggle] = !this.switches[toggle];
   }
 
 }
